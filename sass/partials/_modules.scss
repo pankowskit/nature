@@ -5,3 +5,91 @@
         background-blend-mode: multiply;
     }
 }
+.contact{
+    &-s3{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
+}
+.info{
+    &-s2,&-s4{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
+}
+.text-shadow{
+    text-shadow: $text-shadow;
+}
+header{
+    z-index: 10;
+}
+
+@media all and (max-width: 767px){
+    .contact{
+        &-s1,&-s2{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+            text-shadow: $text-shadow;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+        &-s2{
+            background-position: left!important;
+        }
+    }
+    .gallery{
+        &-s1,&-s2{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+            text-shadow: $text-shadow;
+        }
+        &-s1{
+            background-position: left!important;
+        }
+        &-s2{
+            background-position: right!important;
+        }
+    }
+    .index,.faq{
+        &-s1{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+            background-position: right!important;
+            text-shadow: $text-shadow;
+        }
+    }
+    .info{
+        &-s1,&-s3{
+            *{
+                color: #fff !important;
+            }
+            background-color: #999!important;
+            background-blend-mode: multiply!important;
+            text-shadow: $text-shadow;
+        }
+        &-s3{
+            background-position: right!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            *:hover{
+                opacity: 0.8;
+            }
+            background-color: #999!important;
+            border: 1px solid #666!important;
+            color: #333!important;
+            padding: 10px;
+        }
+    }
+}
